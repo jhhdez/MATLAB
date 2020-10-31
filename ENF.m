@@ -5,7 +5,7 @@ function ENF (Sx_in,FS_resample)
 [y,FS] = audioread (Sx_in);
 
 %2. Asegurarse de que sea un vector fila
-y = y(:)';
+y = y(:,1)';
 
 %3. Calculamos la cantidad de segundos totales que dura la grabacion
 cant_seg = length(y)/FS;

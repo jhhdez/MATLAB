@@ -11,7 +11,7 @@ function Power_Progress (Sx_in,size_block,overlap)
 
 % 1. Cargar fichero %
 [y,FS] = audioread (Sx_in);
-y = y(:)';
+y = y(:,1)';
 
 cant_segundos = length(y)/FS;
 

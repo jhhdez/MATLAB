@@ -14,7 +14,7 @@ function [DC_global] = DC_offset (Sx_in,size_block,overlap,windows)
 
 % 1. Cargar fichero %
 [y,FS] = audioread (Sx_in);
-y = y(:)';
+y = y(:,1)';
 
 % 2. Cálulo del nivel de continua global
 DC_global = mean(y);
