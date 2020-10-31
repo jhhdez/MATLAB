@@ -28,9 +28,6 @@ cant_ceros = (numero_ventanas*size_ventana) - length (y);
 % 5. Completamos con ceros el vector de la señal %
 y = [y zeros(1,cant_ceros)];
 
-% 6. Creamos matriz para guardar espectro (modulo) de cada bloque %
-Nf = ceil((size_ventana+1)/2);             %Nos quedamos con el espectro real
-
 % 7. Ciclo para recorrer bloque por bloque %
 LTA_global=0;
 
